@@ -1,0 +1,15 @@
+<html lang="en">
+<body>
+    <h1>Tweets</h1>
+    <% tweets.forEach(tweet=>{
+        %>
+    <div>
+        <h2><%= tweet.title %></h2>
+        <h3><%= tweet.body %></h3>
+        <h4>Tags- <%= [...tweet.tags] %></h4>
+        <p>By- <%= tweet.user_id %></p>
+    </div>
+<%
+    }) %>
+</body>
+</html>
